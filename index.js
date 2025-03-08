@@ -18,7 +18,7 @@ app.get('/',(req, res) => {
 });
 
 
-mongoose.connect("mongodb+srv://kalamataprasanth047:Prasanth%40CSE1@backenddb.oorwo.mongodb.net/CRUD_API?retryWrites=true&w=majority&appName=backendDB")
+mongoose.connect("mongodb+srv://<username>:<password>@backenddb.oorwo.mongodb.net/CRUD_API?retryWrites=true&w=majority&appName=backendDB")
 .then(() => {
     console.log("Connected to database!");
     app.listen(3000, ()=> {
